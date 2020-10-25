@@ -16,12 +16,12 @@ function Products() {
 
   return (
     <ul>
-      {Object.values(products).map( (item, index) => {
-          return <li key={index}>{index}-{item.name},{item.price} - 
+      {Object.values(products).map( (item, itemIndex) => {
+          return <li key={item.id}>{itemIndex}-{item.name},{item.price} - 
                     {
-                      item.images.map( (image, index) => {
-                          return <img key={index} src={image.src}></img> 
-                        })
+                      item.images.map( (image, imgIndex) => {
+                        return <img key={imgIndex} src={image.src}></img>;
+                      })
                     }   
                 </li>
       })
