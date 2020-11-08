@@ -3,9 +3,9 @@ import Oauth from "oauth-1.0a";
 import CryptoJS from "crypto-js";
 import jQuery from "jquery";
 
-const ck = "ck_...";
-const cs = "cs_...";
-const baseURL = "http://url";
+const ck = "ck_..."; //write your key here
+const cs = "cs_..."; //write you secret here
+const baseURL = "http://url"; // your url here
 
 const Woocommerce = {
   getProducts: () => {
